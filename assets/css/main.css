@@ -2148,6 +2148,80 @@ header.active {
 .programs ul li>a{
     color: #fff;
 }
+#video-accordian .accordion-button{
+    background-color: transparent;
+    box-shadow: none;
+}
+#video-accordian .accordion-button span{
+    margin-left: auto;
+}
+#video-accordian .accordion-button:not(.collapsed)::after, #video-accordian .accordion-button::after{
+    content: none;
+    background-image: none;
+}
+#video-accordian .accordion-body ul{
+    list-style-type: circle;
+}
+#video-accordian .accordion-body ul li{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: circle;
+    padding-left: 30px;
+}
+#video-accordian .accordion-body ul li::before{
+    content: '\f111';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 15px;
+    font-size: 8px;
+    color: #1179ef;
+    z-index: 1;
+    position: relative;
+}
+#video-accordian .accordion-body ul li:first-child::after {
+    top: 15px;
+}
+#video-accordian .accordion-body ul li:last-child::after {
+    bottom: 20px;
+}
+#video-accordian .accordion-body ul li::after{
+    content: "";
+    width: 1px;
+    display: inline-block;
+    background: #d2d6de;
+    position: absolute;
+    left: 33px;
+    top: -15px;
+    bottom: 0;
+}
+#video-accordian .accordion-body ul li span{
+    margin-left: auto;
+}
+#video-accordian .accordion-button:before{
+    content: '\f067';
+    font-family: "Font Awesome 5 Free";
+    margin-right: 15px;
+    font-weight: 900;
+    transition: all .4s ease-in-out;
+}
+#video-accordian .accordion-button:not(.collapsed):before{
+    content: '\f068';
+    font-family: "Font Awesome 5 Free";
+    margin-right: 15px;
+    font-weight: 900;
+    transition: all .4s ease-in-out;
+}
+#video-accordian .accordion-header{
+    margin-top: 0;
+}
+#video-accordian .accordion-item{
+    border: 0;
+    background-color: transparent;
+}
+.accordion-header{
+    height: auto;
+    margin-top: 0;
+}
 @media (min-width: 992px) {
     .menu {
         margin-left: auto;
